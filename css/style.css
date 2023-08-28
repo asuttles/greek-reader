@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
 }
 
 header {
@@ -20,12 +21,15 @@ h1 {
 
 
 main {
-    /* font-family: 'Cardo', serif; */
-    /* font-family: 'Tinos', serif; */
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+ol {
+
+    list-style-type: lower-greek;
 }
 
 .titlePage {
@@ -38,6 +42,7 @@ main {
 .greekSection {
     margin-bottom: 4rem;
 }
+
 
 .greekText {
     font-size: 2rem;
@@ -52,5 +57,6 @@ main {
 .contactForm {
 
     width: 100%;
+    height: auto;
     /*height: 50%; */
 }
