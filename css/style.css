@@ -1,6 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap'); */
-
 * {
     box-sizing: border-box;
     font-family: "Times New Roman", sans-serif;
@@ -9,8 +6,9 @@
 header {
     border-style: solid;
     padding: 2rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2.5%;
 }
 
 h1 {
@@ -27,9 +25,30 @@ main {
     margin-bottom: 5%;
 }
 
+ul, ol {
+
+    line-height: 1.75em;
+}
+
 ol {
 
     list-style-type: lower-greek;
+}
+
+#toc li {
+    padding-left: 1em;
+}
+
+li::marker {
+
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+#toc a:hover,
+#toc a:focus {
+    background: black;
+    color: whitesmoke;
 }
 
 .titlePage {
@@ -42,7 +61,6 @@ ol {
 .greekSection {
     margin-bottom: 4rem;
 }
-
 
 .greekText {
     font-size: 2rem;
@@ -58,5 +76,4 @@ ol {
 
     width: 100%;
     height: auto;
-    /*height: 50%; */
 }
