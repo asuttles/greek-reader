@@ -80,7 +80,11 @@ li::marker {
 }
 
 .contactForm {
-
+    
     width: 100%;
     height: auto;
 }
+
+.clear {
+    clear: left;
+    {
