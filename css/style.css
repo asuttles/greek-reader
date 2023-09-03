@@ -80,7 +80,6 @@ ol li::marker {
     overflow: hidden;
     background-color: lightgray;    
     position: fixed;
-    /* top: 0; */
     font-family: arial;
     font-weight: 500;
     font-size: 1rem;
