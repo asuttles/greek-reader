@@ -1,4 +1,4 @@
-* {
+ {
     box-sizing: border-box;
     font-family: "Times New Roman", sans-serif;
 }
@@ -9,13 +9,19 @@ header {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 2.5%;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: arial;
 }
+
 
 header img.greekReader {
     float: left;
     margin-right: 2rem;
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
 }
-
 
 h1 {
     font-size: 3rem;
@@ -33,7 +39,7 @@ figure {
 main {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 5%;
 }
 
@@ -51,7 +57,7 @@ ol {
     padding-left: 1em;
 }
 
-li::marker {
+ol li::marker {
 
     font-size: 1.25em;
     text-transform: uppercase;
@@ -70,6 +76,45 @@ li::marker {
     text-align: center;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: lightgray;    
+    position: fixed;
+    /* top: 0; */
+    font-family: arial;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 3px;
+}
+
+.navbar h3 {
+    margin: 0;
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+.navbar a {
+    /* float: left; */
+    /* display: block; */
+    color: black;
+    text-align: left;
+    /* padding: 10px 12px; */
+    text-decoration: none;
+}
+
+.navbar ul {
+    
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 
 .greekSection {
     margin-bottom: 4rem;
@@ -82,7 +127,7 @@ li::marker {
 }
 
 .fillableFields {
-    padding: 2rem;
+    padding: 0rem 1.5rem 1rem 1.5rem;
 }
 
 .contactForm {
@@ -91,3 +136,6 @@ li::marker {
     height: auto;
 }
 
+h1.contactPage {
+    margin-bottom: 0px;
+}
