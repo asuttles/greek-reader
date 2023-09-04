@@ -57,6 +57,11 @@ ol {
     padding-left: 1em;
 }
 
+#toc h2 a {
+    text-decoration: none;
+    color: black;
+}
+
 ol li::marker {
 
     font-size: 1.25em;
@@ -114,6 +119,11 @@ ol li::marker {
     margin-bottom: 0.5rem;
 }
 
+.navbar a:hover {
+    background: black;
+    color: whitesmoke;
+}
+
 
 .greekSection {
     margin-bottom: 4rem;
@@ -138,3 +148,4 @@ ol li::marker {
 h1.contactPage {
     margin-bottom: 0px;
 }
+
