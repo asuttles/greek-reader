@@ -1,7 +1,8 @@
- {
-    box-sizing: border-box;
+* {
+    /* Box sizes (height/width) include border and padding */
+    box-sizing: border-box;	
     font-family: "Times New Roman", sans-serif;
-}
+ }
 
 header {
     border-style: solid;
@@ -13,7 +14,6 @@ header {
     font-size: 1.1rem;
     font-family: arial;
 }
-
 
 header img.greekReader {
     float: left;
@@ -90,7 +90,7 @@ ol li::marker {
     font-size: 1rem;
     margin: 0px;
     border-style: solid;
-    border-color: lightgray;
+    border-color: darkgray;
     border-width: 3px;
 }
 
