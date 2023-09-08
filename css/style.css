@@ -10,7 +10,7 @@ header {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 2.5%;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 1.1rem;
     font-family: arial;
 }
@@ -83,6 +83,7 @@ ol li::marker {
 
 .navbar {
     overflow: hidden;
+    color: black;
     background-color: lightgray;    
     position: fixed;
     font-family: arial;
