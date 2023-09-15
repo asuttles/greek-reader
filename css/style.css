@@ -17,17 +17,19 @@ header {
 
 header img.greekReader {
     float: left;
+    max-width: 230px;
     margin-right: 2rem;
-    /* max-width: 200px; */
-    /* max-height: 150px; */
     object-fit: contain;
+}
+
+.about {
+    /* overflow: hidden; */
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
     margin-top: 0%;
-    /*    padding: 0.5em;    */
 }
 
 figure {
@@ -68,8 +70,7 @@ ol li::marker {
     text-transform: uppercase;
 }
 
-#toc a:hover,
-#toc a:focus {
+#toc a:hover, #toc a:focus {
     background: black;
     color: whitesmoke;
 }
@@ -83,17 +84,25 @@ ol li::marker {
 
 .navbar {
     overflow: hidden;
-    min-width: 175px;
+    width: 175px;
+    max-width: 15%;
     color: black;
-    background-color: lightgray;    
+    background-color: lightgray;
     position: fixed;
     font-family: arial;
     font-weight: 500;
     font-size: 1rem;
     margin: 0px;
+    margin-top: 2.5%;
     border-style: solid;
-    border-color: darkgray;
+    border-color: black; /*darkgray;*/
     border-width: 3px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .navbar h3 {
@@ -103,11 +112,8 @@ ol li::marker {
 }
 
 .navbar a {
-    /* float: left; */
-    /* display: block; */
     color: black;
     text-align: left;
-    /* padding: 10px 12px; */
     text-decoration: none;
 }
 
@@ -128,13 +134,25 @@ ol li::marker {
 
 
 .greekSection {
-    margin-bottom: 4rem;
+    clear: both;
+    overflow: hidden;
+    margin-top: 25px;
 }
 
 .greekText {
     font-size: 2rem;
     width: 100%;
-    /* color: navy; */
+}
+
+.greekSection .notes {
+    width: 50%;
+    float: left;
+}
+
+.greekSection .translation {
+    margin-left: 2%;
+    width: 48%;
+    float: right;
 }
 
 .fillableFields {
@@ -151,3 +169,6 @@ h1.contactPage {
     margin-bottom: 0px;
 }
 
+footer p {
+    padding-left: 15px;
+}
