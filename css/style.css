@@ -26,6 +26,10 @@ header img.greekReader {
     /* overflow: hidden; */
 }
 
+.bookTitle {
+    font-style: italic;
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;
