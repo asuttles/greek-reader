@@ -11,53 +11,54 @@
 
     <body>
 
-	<nav class="navbar">
-	    <h3>Site Navigation</h3>
-	    <ul>
-		<li><a href="index.html#toc">HOME</a></li>
-		<li><a href="#">AESOP</a></li>		
-		<li><a href="theophrastus.html">THEOPHRASTUS</a></li>
-		<li><a href="lucian.html">LUCIAN</a></li>		
-		<li><a href="contact.html">CONTACT</a></li>
-	    </ul>
-	</nav>
-
+	<!-- <nav class="navbar">
+	     <h3>Site Navigation</h3>
+	     <ul>
+	     <li><a href="index.html#toc">HOME</a></li>
+	     <li><a href="#">AESOP</a></li>		
+	     <li><a href="theophrastus.html">THEOPHRASTUS</a></li>
+	     <li><a href="lucian.html">LUCIAN</a></li>		
+	     <li><a href="contact.html">CONTACT</a></li>
+	     </ul>
+	     </nav>
+	-->
 
 	<main>
-	    <h1 class="contactPage">Contact Form</h1>
-	    
-	    <form
-		action="https://formspree.io/f/meqbgpdb"
-			method="POST">
+	    <section class="contactPage">
+		<h1>Contact Form</h1>
 		
-		<fieldset>
-		    <legend><h3>Feedback and Suggestions</h3></legend>
-		    <div class="fillableFields">
-			<p>
-			    <label>
-				Name:
-				<input type="text" name="name">
-			    </label>
-			</p>
+		<form
+		    action="https://formspree.io/f/meqbgpdb"
+			    method="POST">
+		    
+		    <fieldset>
+			<legend><h3>Feedback and Suggestions</h3></legend>
+			<div class="fillableFields">
 
-			<p>		
-			    <label>
-				Email:
-				<input type="email" name="email" required>
-			    </label>
-			</p>
+			    <div class="contactInfo">
+				<label>
+				    Name:
+				    <input type="text" name="name" class="id">
+				</label>
 
-			<p>
-			    <label>
-				<textarea name="message" required class="contactForm" rows="5" placeholder="Type your message here..."></textarea>
-			    </label>
-			</p>
-		    </div>
-		</fieldset>
+				<label>
+				    Email:
+				    <input type="email" name="email" required class="id">
+				</label>
+			    </div>
 
-		<p><button type="submit">Send</button></p>
-		
-	    </form>
+			    <p>
+				<label>
+				    <textarea name="message" required class="messageText" rows="5" placeholder="Type your message here..."></textarea>
+				</label>
+			    </p>
+			</div>
+		    </fieldset>
+
+		    <p><button type="submit" class="button">Send</button></p>
+		    
+		</form>
+	    </section>
 	</main>
 
 	<footer>

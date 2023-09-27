@@ -159,19 +159,65 @@ ol li::marker {
     float: right;
 }
 
-.fillableFields {
-    padding: 0rem 1.5rem 1rem 1.5rem;
+
+/* Contact Page */
+
+.contactPage {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    & h1 {
+	margin-bottom: -10px;
+    }
+
+    & fieldset {
+	border-radius: 12px;
+    }
+
+    .fillableFields {
+	padding: 0rem 1.5rem 1rem 1.5rem;
+	overflow: hidden;
+
+	.contactInfo {
+	    display: flex;
+	    width: 100%;
+	    flex-direction: row;
+	    justify-content: flex-start;
+	    gap: 20px;
+	    flex-wrap: wrap;
+	
+	    .id {
+		flex-basis: 150px;
+		flex-grow: 1;
+	    }
+	}
+	
+	.messageText {
+	    width: 100%;
+	    height: 150px;
+	}
+    }
+
+    .button {
+	border: none;
+	border-radius: 8px;
+	color: white;
+	background-color: darkblue;
+	width: 60px;
+	height: 35px;
+	padding: 5px;
+	text-aligned: center;
+	text-decoration: none;
+	font-size: 16px;
+    }
+
+    .button:hover {
+	background-color: Green;
+    }
 }
 
-.contactForm {
-    
-    width: 100%;
-    height: auto;
-}
-
-h1.contactPage {
-    margin-bottom: 0px;
-}
+/* Footers */
 
 footer p {
     padding-left: 15px;
