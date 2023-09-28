@@ -160,15 +160,16 @@ ol li::marker {
 }
 
 
+/* ============ */
 /* Contact Page */
-
+/* ============ */
 .contactPage {
 
     margin-left: 10%;
     margin-right: 10%;
 
     & h1 {
-	margin-bottom: -10px;
+	margin-bottom: 0px;
     }
 
     & fieldset {
@@ -176,7 +177,7 @@ ol li::marker {
     }
 
     .fillableFields {
-	padding: 0rem 1.5rem 1rem 1.5rem;
+	padding: 0.5rem 1.5rem 1rem 1.5rem;
 	overflow: hidden;
 
 	.contactInfo {
@@ -202,7 +203,7 @@ ol li::marker {
     .button {
 	border: none;
 	border-radius: 8px;
-	color: white;
+	color: whitesmoke;
 	background-color: darkblue;
 	width: 60px;
 	height: 35px;
@@ -217,8 +218,9 @@ ol li::marker {
     }
 }
 
-/* Footers */
-
+/* ----------- */
+/* Page Footer */
+/* ----------- */
 footer p {
     padding-left: 15px;
 }
