@@ -165,15 +165,23 @@ ol li::marker {
 /* ============ */
 .contactPage {
 
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: snow;
 
+    & main {
+	margin-left: 25%;
+	margin-right: 25%;
+    }
+    
     & h1 {
 	margin-bottom: 0px;
+	color: darkslategray;
+	font-weight: 500;
     }
 
     & fieldset {
 	border-radius: 12px;
+	background-color: ghostwhite;
+	margin-bottom: -15px;
     }
 
     .fillableFields {
@@ -189,32 +197,38 @@ ol li::marker {
 	    flex-wrap: wrap;
 	
 	    .id {
-		flex-basis: 150px;
+		width: 225px;
 		flex-grow: 1;
 	    }
 	}
 	
 	.messageText {
-	    width: 100%;
+	    width: 95%;
 	    height: 150px;
+	    margin: 20px 0 0 0;
 	}
     }
 
-    .button {
-	border: none;
-	border-radius: 8px;
-	color: whitesmoke;
-	background-color: darkblue;
-	width: 60px;
-	height: 35px;
-	padding: 5px;
-	text-aligned: center;
-	text-decoration: none;
-	font-size: 16px;
+    .submit {
+	text-align: center;
+	
+	.button {
+	    border: none;
+	    border-radius: 16px;
+	    color: whitesmoke;
+	    background-color: slategray;
+	    width: 150px;
+	    height: 35px;
+	    padding: 5px;
+	    text-aligned: center;
+	    text-decoration: none;
+	    font-size: 16px;
+	}
     }
 
     .button:hover {
 	background-color: Green;
+	cursor: pointer;
     }
 }
 
