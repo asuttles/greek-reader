@@ -22,7 +22,7 @@
 
 	.navheader {
 	    display: flex;
-	    background: #444;
+	    background: #333;
 	    font-size: 18px;
 	    margin: 0;
 	    flex-grow: 1;
@@ -31,13 +31,25 @@
 		display: flex;
 		list-style-type: none;
 		flex-grow: 1;
-		justify-content: space-between;	
+		gap: 12px;
+		justify-content: flex-start;
+		padding-inline-start: 12px;
+		padding-inline-end: 12px;
+
+		.pushright {
+		    margin-left: auto;
+		}
 	    }
 
 	    & a {
 		color: #f2f2f2;
 		text-decoration: none;
-		padding: 12px;
+		padding: 0;
+	    }
+
+	    #toc a:hover, #toc a:focus {
+		background: black;
+		color: whitesmoke;
 	    }
 	}
     }
@@ -51,7 +63,7 @@
 	border: solid;
 	padding: 2px;
 	margin-left: 5%;
-	margin-right: 75px;
+	margin-right: 100px;
 	text-align: center;
 	float: left;
     }
@@ -62,13 +74,16 @@
 	    overflow: hidden;
 	}
 
+	& li {
+	    padding-left: 1em;
+	}
+
 	& h2 a {
 	    text-decoration: none;
 	    color: black;
 	}
     }
 }
-
 
 header {
     border-style: solid;
@@ -86,10 +101,6 @@ header img.greekReader {
     max-width: 230px;
     margin-right: 2rem;
     object-fit: contain;
-}
-
-.about {
-    /* overflow: hidden; */
 }
 
 .bookTitle {
@@ -125,20 +136,10 @@ ol {
     list-style-type: lower-greek;
 }
 
-#toc li {
-    padding-left: 1em;
-}
-
-
 ol li::marker {
 
     font-size: 1.25em;
     text-transform: uppercase;
-}
-
-#toc a:hover, #toc a:focus {
-    background: black;
-    color: whitesmoke;
 }
 
 .navbar {
